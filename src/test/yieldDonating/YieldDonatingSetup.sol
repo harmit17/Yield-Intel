@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0
 pragma solidity ^0.8.25;
 
-import "forge-std/console2.sol";
 import {Test} from "forge-std/Test.sol";
 
 import {YieldDonatingStrategy as Strategy, ERC20} from "../../strategies/yieldDonating/YieldDonatingStrategy.sol";
@@ -34,7 +33,7 @@ contract YieldDonatingSetup is Test, IEvents {
 
     // Integer variables that will be used repeatedly.
     uint256 public decimals;
-    uint256 public MAX_BPS = 10_000;
+    uint256 public maxBps = 10_000;
 
     // Fuzz from $0.01 of 1e6 stable coins up to 1,000,000 of the asset
     uint256 public maxFuzzAmount;
