@@ -1,7 +1,7 @@
-@octant-core=dependencies/octant-v2-core/src
-@openzeppelin-contracts-5.3.0/=dependencies/@openzeppelin-contracts-5.3.0/
+@octant-core/=dependencies/octant-v2-core/src/
+src/core/=dependencies/octant-v2-core/src/core/
+src/errors.sol=dependencies/octant-v2-core/src/errors.sol
 @openzeppelin/contracts/=dependencies/@openzeppelin-contracts-5.3.0/contracts/
+@tokenized-strategy/=dependencies/tokenized-strategy-3.0.4/src/
 @tokenized-strategy-periphery/=dependencies/tokenized-strategy-periphery-3.0.2/
-@tokenized-strategy/=dependencies/tokenized-strategy-3.0.4/src
-forge-std-1.11.0/=dependencies/forge-std-1.11.0/
-src/=dependencies/octant-v2-core/src/
+forge-std/=dependencies/forge-std-1.11.0/src/
