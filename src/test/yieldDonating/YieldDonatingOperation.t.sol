@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.25;
 
-import "forge-std/console2.sol";
-import {YieldDonatingSetup as Setup, ERC20, IStrategyInterface, ITokenizedStrategy} from "./YieldDonatingSetup.sol";
+import {console2} from "forge-std/console2.sol";
+import {YieldDonatingSetup as Setup, ITokenizedStrategy} from "./YieldDonatingSetup.sol";
 
 contract YieldDonatingOperationTest is Setup {
     function setUp() public virtual override {
