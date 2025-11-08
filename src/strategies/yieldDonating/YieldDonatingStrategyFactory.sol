@@ -8,8 +8,8 @@ import {YieldDonatingTokenizedStrategy} from "@octant-core/strategies/yieldDonat
 contract YieldDonatingStrategyFactory {
     event NewStrategy(address indexed strategy, address indexed asset);
 
-    address public immutable emergencyAdmin;
-    address public immutable tokenizedStrategyAddress;
+    address public immutable EMERGENCY_ADMIN;
+    address public immutable TOKENIZED_STRATEGY_ADDRESS;
 
     address public management;
     address public donationAddress;
@@ -23,10 +23,10 @@ contract YieldDonatingStrategyFactory {
         management = _management;
         donationAddress = _donationAddress;
         keeper = _keeper;
-        emergencyAdmin = _emergencyAdmin;
+        EMERGENCY_ADMIN = _emergencyAdmin;
 
         // Deploy the standard TokenizedStrategy implementation
-        tokenizedStrategyAddress = address(new YieldDonatingTokenizedStrategy());
+        TOKENIZED_STRATEGY_ADDRESS = address(new YieldDonatingTokenizedStrategy());
     }
 
     /**
@@ -50,10 +50,10 @@ contract YieldDonatingStrategyFactory {
                     _name,
                     management,
                     keeper,
-                    emergencyAdmin,
+                    EMERGENCY_ADMIN,
                     donationAddress,
                     enableBurning,
-                    tokenizedStrategyAddress
+                    TOKENIZED_STRATEGY_ADDRESS
                 )
             )
         );
