@@ -1,4 +1,10 @@
 {
+  "dependencies/octant-v2-core": {
+    "branch": {
+      "name": "develop",
+      "rev": "58d698ee0cb0a7c993c92adc6239f22ed5140ac2"
+    }
+  },
   "lib/forge-std": {
     "branch": {
       "name": "master",
